@@ -38,9 +38,10 @@
       // shm_enabled: false,
 
       allow: {
-         publishers: [".*/mavros/state", "/trajs", "/tf", "/tf_static", ".*/cluster_bounding_boxes", ".*/tracked_obstacles", ".*/traj_committed_colored", ".*/dgp_path_marker", ".*/static_grid_topic", ".*/compressed_points", ".*/poly_safe", ".*/actual_traj", ".*/hover_avoidance_viz", ".*/occupancy_grid", ".*/unknown_grid", ".*/dynamic_grid", ".*/downsampled_occupancy_grid", ".*/predicted_trajs", ".*/heat_cloud", ".*/vel_text", ".*/computation_times"],
-         // publishers: [".*/pose", "/trajs"],
-         subscribers: [".*/mavros/state", "/trajs", "/tf", "/tf_static", ".*/world", ".*/twist", ".*/traj_committed_colored", ".*/dgp_path_marker", ".*/term_goal", ".*/poly_safe", ".*/actual_traj", ".*/hover_avoidance_viz", ".*/occupancy_grid", ".*/dynamic_grid", ".*/heat_cloud", ".*/vel_text", ".*/tracked_obstacles", ".*/cluster_bounding_boxes"],
+         // publishers: [".*/mavros/state", "/trajs", "/tf", "/tf_static", ".*/cluster_bounding_boxes", ".*/tracked_obstacles", ".*/traj_committed_colored", ".*/dgp_path_marker", ".*/static_grid_topic", ".*/compressed_points", ".*/poly_safe", ".*/actual_traj", ".*/hover_avoidance_viz", ".*/occupancy_grid", ".*/unknown_grid", ".*/dynamic_grid", ".*/downsampled_occupancy_grid", ".*/predicted_trajs", ".*/heat_cloud", ".*/vel_text", ".*/computation_times"],
+         publishers: ["/tf", ".*/term_goal", ".*/traj_committed_colored"],
+         // subscribers: [".*/mavros/state", "/trajs", "/tf", "/tf_static", ".*/world", ".*/twist", ".*/traj_committed_colored", ".*/dgp_path_marker", ".*/term_goal", ".*/poly_safe", ".*/actual_traj", ".*/hover_avoidance_viz", ".*/occupancy_grid", ".*/dynamic_grid", ".*/heat_cloud", ".*/vel_text", ".*/tracked_obstacles", ".*/cluster_bounding_boxes"],
+         subscribers: ["/tf", ".*/term_goal", ".*/traj_committed_colored"],
       //   service_servers: [".*/.*_parameters"],
          service_clients: ["/sim/get_system_info"],
       //   action_servers: [".*/rotate_absolute"],
