@@ -40,9 +40,9 @@
       allow: {
          // Flight mode: minimal topics to avoid network saturation
          // publishers: ["/trajs", "/tf", "/tf_static", ".*/world", ".*/traj_committed_colored", ".*/dgp_path_marker", ".*/poly_safe", ".*/actual_traj", ".*/hover_avoidance_viz", ".*/vel_text", ".*/tracked_obstacles", ".*/cluster_bounding_boxes", ".*/occupancy_grid"],
-         publishers: ["/tf", "/tf_static", ".*/term_goal", ".*/traj_committed_colored", ".*/world", ".*/mocap/twist", ".*/occupancy_grid", ".*/dgp_path_marker", ".*/hgp_path_marker", ".*/original_hgp_path_marker", ".*/vel_text", ".*/tracked_obstacles", ".*/cluster_bounding_boxes", ".*/dynamic_grid"],
+         publishers: ["/trajs", "/tf", "/tf_static", ".*/term_goal", ".*/traj_committed_colored", ".*/world", ".*/mocap/twist", ".*/occupancy_grid", ".*/dgp_path_marker", ".*/hgp_path_marker", ".*/original_hgp_path_marker", ".*/vel_text", ".*/tracked_obstacles", ".*/cluster_bounding_boxes", ".*/dynamic_grid"],
          // subscribers: ["/trajs", "/tf", "/tf_static", ".*/term_goal", ".*/world", ".*/traj_committed_colored", ".*/dgp_path_marker", ".*/poly_safe", ".*/actual_traj", ".*/hover_avoidance_viz", ".*/vel_text", ".*/tracked_obstacles", ".*/cluster_bounding_boxes", ".*/occupancy_grid"],
-         subscribers: [".*/term_goal", ".*/traj_committed_colored", ".*/world", ".*/mocap/twist", ".*/occupancy_grid", ".*/dgp_path_marker", ".*/vel_text", ".*/tracked_obstacles", ".*/cluster_bounding_boxes"],
+         subscribers: ["/trajs", ".*/term_goal", ".*/traj_committed_colored", ".*/world", ".*/mocap/twist", ".*/occupancy_grid", ".*/dgp_path_marker", ".*/vel_text", ".*/tracked_obstacles", ".*/cluster_bounding_boxes"],
       //   service_servers: [".*/.*_parameters"],
          service_clients: ["/sim/get_system_info"],
       //   action_servers: [".*/rotate_absolute"],
